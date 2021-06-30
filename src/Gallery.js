@@ -29,7 +29,7 @@ function Gallery() {
   function DisplayHandler(event){
     var displayimgNo = event.currentTarget.className.split('g')[1];
     var displayimgtitle = event.currentTarget.children[0].innerHTML;
-    setdisplay([displayimgNo,displayimgtitle]);
+    setdisplay([parseInt(displayimgNo),displayimgtitle]);
     console.log(event.currentTarget.className);
     console.log(event.currentTarget.children[0].innerHTML);
     setdisplaystatus(true);
